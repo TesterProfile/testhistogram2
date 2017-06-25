@@ -40,7 +40,7 @@ var barDataByCount = []; // data sorted by count
 		
 
 //read data from file
-d3.csv("shoplocationsavg.csv", type, function(error, data) {
+d3.tsv("histogramdata.tsv", type, function(error, data) {
 
 	// copy data and then sort by count
 	barDataByCount = data.slice();
